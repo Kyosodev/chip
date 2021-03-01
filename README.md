@@ -24,12 +24,12 @@ flag lets you tag your image, so it's easier to find later using the docker imag
 
 ### Self Hosting - Without Docker
 
-**5.** `cd` to `/main`
+**5.** Run `cd main`
 
 **6.** Run `npm i`
 
 **7.** Run `node index.js` to start the bot
 
-## sInfo
+## Info
 
 Join Chip's testing server for help/more information: https://discord.gg/9bXgujJZ79
