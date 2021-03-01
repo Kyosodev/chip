@@ -72,7 +72,7 @@ class MongoHandler {
 		await this.mongo.connect(mongo.host, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
-			authSource: 'admin',
+			authSource: mongo.authSource,
 			auth: {
 				user: mongo.auth.user,
 				password: mongo.auth.password
