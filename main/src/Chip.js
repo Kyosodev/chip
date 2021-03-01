@@ -8,9 +8,10 @@ class Chip extends Base {
 		
 		this.bot.location = process.cwd()
 		this.bot.color = embedColor
-		this.bot.mongo = new MongoHandler()
-		this.bot.redis = new RedisHandler(this.bot)
 		
+		this.bot.mongo = new MongoHandler()
+		
+		new RedisHandler(this.bot)
 		new CommandHandler(this.bot)
 		new EventHandler(this.bot)
 	}
