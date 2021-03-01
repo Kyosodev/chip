@@ -106,3 +106,4 @@ dist
 # other
 .idea/
 docker-compose.yml
+main/config/
