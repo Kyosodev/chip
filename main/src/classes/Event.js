@@ -12,10 +12,12 @@ class Event extends EventEmitter {
 			if (this.run.constructor.name !== 'AsyncFunction')
 				throw new TypeError('Classes extending "Event" must implement "run" as async function')
 		} else throw new TypeError('Classes extending "Event" must implement an async function "run"')
+		
+		this.on('error', (err) => console.error(err))
 	}
 	
 	exec (...args) {
-		this.run(...args).catch(error => this.emit('error', error))
+		this.run(...args).catch(err => this.emit('error', err))
 	}
 }
 
