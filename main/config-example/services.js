@@ -9,6 +9,7 @@ module.exports = {
 		auth: {
 			user: '', // Your MongoDB user
 			password: '' // Your MongoDB password
-		}
+		},
+		authSource: '' // authSource for your MongoDB 
 	}
 }
