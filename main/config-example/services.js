@@ -9,6 +9,11 @@ module.exports = {
 		auth: {
 			user: '', // Your MongoDB user
 			password: '' // Your MongoDB password
-		},
+		}
+	},
+	voteHandler: {
+		host: '', // The IP your Haruna instance is running on
+		port: 0, // The port your Haruna instance is running on
+		auth: '' // Password for your Haruna instance
 	}
 }

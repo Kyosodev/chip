@@ -10,9 +10,11 @@ The are steps you need to take to start the bot regardless if you're using Docke
 
 **2.** Setup a RedisDB instance
 
-**3.** Have Node v15 installed (I have no clue if it works on later versions but v15 is the lowest you can go)
+**3.** Setup a Haruna instace (Can be found here: https://github.com/Deivu/Haruna)
 
-**4.** Rename `/main/config-examples` to `/main/config` and fillout all fields with your info
+**4.** Have Node v15 installed (I have no clue if it works on later versions but v15 is the lowest you can go)
+
+**5.** Rename `/main/config-examples` to `/main/config` and fillout all fields with your info
 
 ### Self Hosting - With Docker
 
