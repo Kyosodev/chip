@@ -2,15 +2,15 @@
 
 This repo is still a work-in-progress so don't expect much from it now.
 
-## Self Hosting - Basics
+## Self Hosting
 
 The are steps you need to take to start the bot regardless if you're using Docker to host the bot.
 
-**1.** Setup a `MongoDB` instance and create a database.
+**1.** Setup a MongoDB instance and create a database.
 
-**2.** Setup a `RedisDB` instance
+**2.** Setup a RedisDB instance
 
-**3.** Have `Node v15` installed (I have no clue if it works on later versions but v15 is the lowest you can go)
+**3.** Have Node v15 installed (I have no clue if it works on later versions but v15 is the lowest you can go)
 
 **4.** Rename `/main/config-examples` to `/main/config` and fillout all fields with your info
 
