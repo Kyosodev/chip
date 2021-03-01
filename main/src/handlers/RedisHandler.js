@@ -19,7 +19,7 @@ class RedisHandler {
 		})
 		
 		redisClient.on('error', err => {
-			process.send({ name: 'error', msg: err })
+			console.error(err)
 		})
 		
 		this.bot.redis = redisClient
