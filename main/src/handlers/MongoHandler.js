@@ -1,6 +1,6 @@
 const Mongo = require('mongoose')
 const Schema = Mongo.Schema
-const { prefix, mongoUser } = require('../../config/settings.js')
+const { prefix, mongoUser, authSource } = require('../../config/settings.js')
 const { mongo } = require('../../config/services.js')
 
 class MongoHandler {
@@ -72,7 +72,7 @@ class MongoHandler {
 		await this.mongo.connect(mongo.host, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
-			authSource: mongo.authSource,
+			authSource: authSource,
 			auth: {
 				user: mongo.auth.user,
 				password: mongo.auth.password
