@@ -105,4 +105,4 @@ dist
 
 # other
 .idea/
-.dockerignore
+docker-compose.yml
