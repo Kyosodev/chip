@@ -73,10 +73,7 @@ class MongoHandler {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			authSource: authSource,
-			auth: {
-				user: mongo.auth.user,
-				password: mongo.auth.password
-			}
+			auth: mongo.auth
 		})
 	}
 }
