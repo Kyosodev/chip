@@ -6,7 +6,7 @@ This repo is still a work-in-progress so don't expect much from it now.
 
 The are steps you need to take to start the bot regardless if you're using Docker to host the bot.
 
-**1.** Se tup a `MongoDB` instance and create a `database`.
+**1.** Set up a `MongoDB` instance and create a database.
 
 **2.** Set up a `RedisDB` instance
 
