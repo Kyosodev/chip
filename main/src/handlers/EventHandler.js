@@ -16,7 +16,7 @@ class EventHandler {
 		for (let event of events) {
 			event = new (require(`../events/${event}`))(this.bot)
 			const exec = event.exec.bind(event)
-			event.once ? this.bot.once(event.name, event.exec.bind(event)) : this.bot.on(event.name, exec)
+			event.once ? this.bot.once(event.name, exec) : this.bot.on(event.name, exec)
 			this.events.set(event.name, event)
 		}
 		
