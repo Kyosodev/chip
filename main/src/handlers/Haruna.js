@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 const abort = require('abort-controller')
 
-class VoteHandler {
+class Haruna {
 	constructor (url, auth) {
 		this.url = url
 		Object.defineProperty(this, 'auth', {
@@ -39,4 +39,4 @@ class VoteHandler {
 	}
 }
 
-module.exports = VoteHandler
+module.exports = Haruna
