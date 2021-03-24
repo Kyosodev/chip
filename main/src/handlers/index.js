@@ -3,5 +3,5 @@ module.exports = {
 	EventHandler: require('./EventHandler'),
 	MongoHandler: require('./MongoHandler'),
 	RedisHandler: require('./RedisHandler'),
-	VoteHandler: require('./VoteHandler')
+	Haruna: require('./Haruna.js')
 }
