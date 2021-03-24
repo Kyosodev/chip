@@ -24,7 +24,7 @@ class MessageCreate extends Event {
 			if (!msg.channel.permissionsOf(this.bot.user.id).has('embedLinks')) return
 			
 			const guildData = await this.bot.mongo.getGuild(msg.channel.guild.id)
-			const prefix = guildData?.serverPrefix.toLowerCase()
+			const prefix = guildData.serverPrefix.toLowerCase()
 			
 			const regularMention = msg.content.startsWith(`<@${this.bot.user.id}>`)
 			const isMentioningBot = (regularMention || msg.content.startsWith(`<@!${this.bot.user.id}>`))
