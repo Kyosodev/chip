@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "abort-controller": "^3.0.0",
-    "eris": "^0.13.4",
+    "eris": "^0.14.0",
     "eris-sharder": "^1.10.0",
     "mongoose": "^5.11.3",
     "node-fetch": "^2.6.1",
