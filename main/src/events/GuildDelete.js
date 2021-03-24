@@ -13,10 +13,10 @@ class GuildDelete extends Event {
 	
 	async run (guild) {
 		const guildData = await this.bot.db.getGuild(guild.id)
-		await guildData?.delete()
+		await guildData.delete()
 		
 		const playerData = await this.bot.db.getPlayer(guild.id)
-		return await playerData?.delete()
+		return await playerData.delete()
 	}
 }
 
