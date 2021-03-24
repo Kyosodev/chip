@@ -1,9 +1,9 @@
 module.exports = {
-	clusterCount: 0, // Amount of Clusters to spawn
-	shardCount: 0, // Amount of Shards to spawn
-	embedColor: 0, // Color for every embed you send
-	prefix: '', // Default prefix of your bot
-	owners: [''], // Array of people that can use owner-only commands
-	mongoUser: '', // Bot name that is accessing the DB (Chip Project has 5 bots interacting with the DB so it's handy to store info per bot)
-	authSource: '' // authSource for your MongoDB
+	clusterCount: 0, // How many clusters to spawn
+	shardCount: 0, // How many shards to spawn (Will be evenly spread amongst clusters)
+	embedColor: 0, // Color for your Embeds
+	prefix: '', // Your default prefix
+	owners: [''], // Array of USER IDs that can use owner-only commands
+	mongoUser: '', // As what users you're storing data
+	authSource: '' // Auth source for Mongo
 }

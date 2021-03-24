@@ -1,3 +1,7 @@
 module.exports = {
-	bot: '' // Your bot's Discord token
+	bot: '',
+	spotify: {
+		clientID: '',
+		clientSecret: ''
+	}
 }
