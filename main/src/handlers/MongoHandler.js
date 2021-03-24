@@ -1,7 +1,7 @@
 const Mongo = require('mongoose')
 const Schema = Mongo.Schema
-const { prefix, mongoUser, authSource } = require('../../config/settings.js')
-const { mongo } = require('../../config/services.js')
+const { prefix, mongoUser, authSource } = require('../../config').settings
+const { mongo } = require('../../config').services
 
 class MongoHandler {
 	constructor () {
